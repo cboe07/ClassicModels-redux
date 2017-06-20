@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1 class="text-center">Product Lines Description</h1>
+
+	<table class=table>
+		<% for(let i = 0; i < productArray.length; i++) {%>
+			<tr>
+				<td><a id="text" action="/productlines" method="get"> <%= productArray[i].textDescription %> </td>
+			</tr>
+		<% } %>
+	</table>
+
+
+
+</body>
+</html>
